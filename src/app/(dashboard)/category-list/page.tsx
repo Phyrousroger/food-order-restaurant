@@ -1,14 +1,19 @@
+import Carousel from "@/components/carousel";
 import { getCategory } from "@/lib/store/server/category/queries";
-import React from "react";
+// import Image from "next/image";
+import { useRouter } from "next/router";
+import React, { useEffect } from "react";
 
 const CategoryList = async () => {
   const category = await getCategory();
-  console.log(category);
+
   return (
-    <main className=" mt-10 h-screen">
+    <main className=" mt-10">
       <h1 className=" text-center text-4xl font-bold">
         You can order this food Category List!
       </h1>
+
+      <Carousel items={category} />
     </main>
   );
 };

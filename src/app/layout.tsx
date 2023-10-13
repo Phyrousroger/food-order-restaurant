@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning={true}>
         <Provider>
           <main className=" flex flex-col justify-between overflow-hidden bg-white backdrop-blur-lg bg-opacity-30 p-8 m-5 rounded-md">
             <Header />
