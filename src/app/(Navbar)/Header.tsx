@@ -1,23 +1,23 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import { Input } from "../../components/ui/input";
-import { Avatar, AvatarFallback } from "../../components/ui/avatar";
+import { DropdownMenuLabel } from "@radix-ui/react-dropdown-menu";
+import { Input } from "@/components/ui/input";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "../../components/ui/dropdown-menu";
-import { DropdownMenuLabel } from "@radix-ui/react-dropdown-menu";
-import { Button } from "../../components/ui/button";
+} from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 
 const Header = () => {
   const [show, setShow] = useState(false);
 
   return (
-    <header className=" flex container mx-auto justify-between items-center relative bg-opacity-40 rounded-md">
+    <header className=" flex justify-between items-center relative bg-opacity-40 rounded-md">
       <Link href={"/"}>
         <h1 className=" font-custom text-3xl font-semibold text-white">
           Phyo

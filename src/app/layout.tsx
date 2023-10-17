@@ -23,7 +23,7 @@ export default function RootLayout({
         <Provider>
           <main className=" flex flex-col justify-between overflow-hidden bg-white backdrop-blur-lg bg-opacity-30 p-8 m-5 rounded-md">
             <Header />
-            {children}
+            <div className="">{children}</div>
             <Footer />
           </main>
         </Provider>
